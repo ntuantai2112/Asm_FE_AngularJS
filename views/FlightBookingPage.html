@@ -1,0 +1,256 @@
+ <!-- Đặt vé máy bay -->
+ <div class="datvemaybay" id="datvemaybay">
+    <div class="btn  my-4 btn-vemaybay" id="myButton">Vé Máy Bay</div>
+    <div class="btn  my-4 btn-vemaybay" id="myButton">Tour Du Lịch</div>
+    <div class="row">
+        <div class=" d-flex">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label me-4" for="flexRadioDefault1">
+                    Một Chiều
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Khứ Hồi
+                </label>
+              </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-2">
+            <div class="fomr-group">
+                <label for="" class="mb-2">Điểm Đi</label>
+                <input type="text" class="form-control" placeholder="Nhập vào điểm đi">
+            </div>
+        </div>
+        <!-- -->
+        <div class="col-2">
+            <div class="fomr-group">
+                <i class="arrow-right-square-fill bg-white "></i> 
+                <label for="" class="mb-2">Điểm Đến</label>
+                <input type="text" class="form-control"  placeholder="Nhập vào điểm đến">
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="fomr-group">
+                <label for="" class="mb-2">Ngày đi</label>
+                <input type="date" id="datepicker" class="form-control">
+                <p id="selectedDate"></p>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="fomr-group">
+                <label for="" class="mb-2">Ngày Về</label>
+                <input type="date" id="datepicker" class="form-control">
+                <p id="selectedDate"></p>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="fomr-group">
+                <label for="" class="mb-2">Số Khách</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected><i class="bi bi-person "></i>1 Khách hàng</option>
+                    <option value="1">Người lớn(>12)</option>
+                    <option value="2">Trẻ em(2-11)</option>
+                    <option value="3">Em bé  </option>
+                  </select>
+            </div>
+        </div>
+        <div class="col-2 mt-4">
+            <div class="btn btn-success mt-2 w-100">Tìm kiếm</div>
+        </div>
+    </div>
+</div>
+<!-- Content -->
+<div class="container" >
+
+<!-- Form Dat ve may bay -->
+<div class="content" id="contentDatVeMayBay">
+    <div class="row box-lienhe">
+        <div class="col-6">
+            <div class="form-lienhe ">
+                <form  ng-submit="onSubmit()">
+                    <h1 class="text-center">{{datvemaybay}}</h1>
+                    <!-- Họ và tên-->
+                   <div class="row">
+                        <div class="col-6 ">
+                            <div class="form-group">
+                                <label for="" class="mb-2">Họ và tên</label>
+                                <input type="text" class="form-control" ng-model="formData.FullName" placeholder="Họ và tên" >
+                            </div>
+                        </div>
+                         <!-- Điện thoai -->
+                        <div class="col-6 ">
+                            <div class="form-group">
+                                <label for="" class="mb-2">Số điện thoai</label>
+                                <input type="text" class="form-control" ng-model="formData.Phone" placeholder="Số điện thoai" >
+                            </div>
+                        </div>
+                   </div>
+                   <!-- Hàng 2 (Chứng minh thư) -->
+                    <div class="row mt-4">
+                        <div class="col-6  ">
+                            <div class="form-group">
+                                <label for="" class="mb-2">Chứng minh thư</label>
+                                <input type="text" class="form-control"  ng-model="formData.Card" placeholder="Chứng  minh thư">
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="form-group">
+                                <label for="" class="mb-2">Email</label>
+                                <input type="text" class="form-control"  ng-model="formData.Email" placeholder="Email" >
+                            </div>
+                        </div>
+                   </div>
+                    <!-- Giới tính -->
+                    <div class="form-group  my-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="" class="me-3">Giới tính</label>
+                            </div>
+
+                            <div class="col-6 d-flex">
+                                <div class="form-check">
+                                    <input ng-model="formData.Gender" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"  value="Nam" checked>
+                                    <label class="form-check-label me-4" for="flexRadioDefault1">
+                                        Nam
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input ng-model="formData.Gender" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="Nữ" >
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                      Nữ
+                                    </label>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chọn chuyến bay -->
+                    <div class="form-group">
+                        <div class="row">
+                        <div class="col-6">
+                            <label for="" class="mt-2">Chọn chuyến bay</label>
+                        </div>
+                        <div class="col-6">
+                            <select ng-model="formData.Flight" class="form-select" aria-label="Default select example">
+                                <option selected>--Chọn--</option>
+                                <option value="Vietjet Air">Vietjet Air</option>
+                                <option value="Bamboo Airways"> Bamboo Airways</option>
+                                <option value="Jetstar Pacific Airlines">Jetstar Pacific Airlines </option>
+                              </select>
+                        </div>
+                    </div>
+                   </div>
+                    <!-- Ngày sinh-->
+                    <div class="form-group">
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <label for="">Ngày sinh</label>
+
+                            </div>
+                            <div class="col-6">
+                                <input type="date" id="datepicker" ng-model="formData.Birthday" class="form-control" >
+                                <p id="selectedDate"></p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <!-- Hành lý -->
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="">Hành lý</label>
+
+                            </div>
+                            <div class="col-6">
+                                <input type="text" id="datepicker"  class="form-control" ng-model="formData.Luggage" placeholder="Hành lý">
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    <!-- CHọn hình thức thành toán -->
+                    <div class="form-group">
+                        <div class="row mt-3">
+                        <div class="col-6">
+                            <label for="" class="mt-2">Hình thức thanh toán</label>
+                        </div>
+                        <div class="col-6">
+                            <select  class="form-select" aria-label="Default select example">
+                                <option selected>--Chọn--</option>
+                                <option value="1">Thẻ ATM</option>
+                                <option value="2">Thẻ Thanh Toán Quốc Tế</option>
+                                <option value="3">Ví Điện Tử</option>
+                              </select>
+                        </div>
+                    </div>
+                   </div>
+                    <button class="btn btn-outline-warning mt-5 form-control " type="submit">ĐẶT VÉ</button>
+
+                </form>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="noidung bg-light">
+                    <h1 class="text-center">{{tieude}}</h1>
+                    <div class="element-container">
+                        <p>Phương châm dịch vụ mà chúng tôi luôn hướng đến là “Hãy phục vụ khách hàng như cách mà bạn muốn được phục vụ” đã đưa chúng tôi tới thành công ngày hôm nay.</p>
+                        <p>Không chỉ cung cấp dịch vụ ngày một hoàn thiện mà còn là người bạn đồng hành trong mọi chuyến đi của khách hàng, đó cũng là giá trị cốt lõi của những gì chúng tôi làm, hỗ trợ khách hàng bất cứ khi nào có khó khăn trong hành trình của họ.</p>
+                        <p>Với gần 30 năm kinh nghiệm và được sự đánh giá cao từ khách hàng, chúng tôi tin rằng chúng tôi luôn là lựa chọn đầu tiên đối với các công ty và khách hàng thường xuyên khi họ tìm kiếm một đại lý du lịch chuyên nghiệp và tận tâm.</p>
+                        <div class="footer-container">                                      
+                                <span class="">Niềm vui và sự hài lòng của khách hàng
+                                    <br>
+                                    là thành công của chúng tôi!
+                                </span>                              
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+<!-- Table thông tin đặt vé máy bay -->
+<table class="table mt-5">
+    <thead>
+      <tr>
+        <th scope="col">Họ và tên</th>
+        <th scope="col">Số điện thoại</th>
+        <th scope="col">Chứng minh thư</th>
+        <th scope="col">Email</th>
+        <th scope="col">Giới tính</th>
+        <th scope="col">Chuyến bay</th>
+        <th scope="col">Ngày sinh</th>
+        <th scope="col">Hành lý</th>
+        <th scope="col">Hành động</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="info in listBooking ">
+            <th class="fw-normal">{{info.FullName}}</th>
+            <td>{{info.Phone}}</td>
+            <td>{{info.Card}}</td>
+            <td>{{info.Email}}</td>
+            <td>{{info.Gender}}</td>
+            <td>{{info.Flight}}</td>
+            <td>{{info.Birthday | date:'dd-MM-yyyy'}} </td>
+            <td>{{info.Luggage}}kg </td>
+            
+            <td>
+                <div class="action">
+                <button  type="button" ng-click="onDelete(info.id)" class="btn btn-primary">Xóa</button>
+                </div>
+            </td>
+
+      </tr>
+      
+    </tbody>
+  </table>
+  
+
+
+</div>

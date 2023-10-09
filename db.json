@@ -1,0 +1,65 @@
+{
+  "listBooking": [
+    {
+      "id": 1,
+      "FullName": "Nguyễn Tuấn Tài",
+      "Phone": "0988485678",
+      "Card": "001089000982",
+      "Email": "tuantain@gmail.com",
+      "Gender": "Nam",
+      "Flight": "VietNameAirline",
+      "Birthday": "21/12/2003",
+      "Luggage": "5"
+    },
+    {
+      "id": 2,
+      "FullName": "Nguyễn Tuấn Tú",
+      "Phone": "0388485090",
+      "Card": "001089123989",
+      "Email": "tuantun@gmail.com",
+      "Gender": "Nam",
+      "Flight": "Bamboo Airways",
+      "Birthday": "24/12/1996",
+      "Luggage": "3"
+    },
+    {
+      "id": 3,
+      "FullName": "Tạ Thanh Tùng",
+      "Phone": "0398483888",
+      "Card": "001089090812",
+      "Email": "thanhtungt@gmail.com",
+      "Gender": "Nam",
+      "Flight": "VietNameAirline",
+      "Birthday": "20/10/2000",
+      "Luggage": "4"
+    },
+    {
+      "id": 4,
+      "FullName": "Nguyễn Phương Anh",
+      "Phone": "0948080765",
+      "Card": "00123498767",
+      "Email": "phuoganhn@gmail.com",
+      "Gender": "Nữ",
+      "Flight": "Bamboo Airways",
+      "Birthday": "01/02/2001",
+      "Luggage": "8"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

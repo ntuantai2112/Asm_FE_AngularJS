@@ -1,0 +1,152 @@
+
+
+/* Slider */
+#contentTinTuc .box-tintuc {
+    margin-top: 100px;
+}
+
+
+#contentTinTuc .slider{
+    margin-top: 80px;
+    /* margin-bottom: 64px; */
+}
+
+#contentTinTuc .slider img{
+    width: 1200px;
+    height: 450px;
+}
+/*  Nội dung  */
+#contentTinTuc .content{
+    margin-top: 120px;
+}
+
+#contentTinTuc .tours{
+    margin-bottom: 64px;
+}
+#contentTinTuc .tours h1{
+     color: #004FA8;
+}
+
+/* Tour phú quốc */
+#contentTinTuc .tours-PhuQuoc {
+
+}
+
+#contentTinTuc .tour-header{
+    border-bottom: 2px solid #eee;
+    margin-bottom: 25px;
+}
+
+
+#contentTinTuc .tours-PhuQuoc h1{
+    color: #004FA8;
+}
+
+/* Những tour phú quốc  */
+
+/* Nội dung những tour phú quốc */
+#contentTinTuc .noidung {
+    box-shadow: 0 0 0 1px #eee;
+    background-color: #fff;
+}
+#contentTinTuc 
+.noidung .anh{
+    height: 210px;
+    overflow: hidden;
+}
+#contentTinTuc .noidung .anh img{
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 120%;
+    max-height: 120%;
+}
+#contentTinTuc .noidung img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all linear .3s;
+}
+#contentTinTuc 
+.noidung .tieude{
+    border-bottom: 2px solid #eee;
+}
+#contentTinTuc .noidung h2{
+    margin: 5px 15px;
+    font-weight: bold;
+    
+}
+
+#contentTinTuc .noidung a{
+    color: #004FA8;
+    font-size: large;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+
+#contentTinTuc .noidung a:hover{
+    /* text-decoration: underline; */
+   
+}
+#contentTinTuc .noidung .gia{
+    margin: 5px 15px;
+}
+
+#contentTinTuc .noidung .gia .tien{
+    color: brown;
+}
+
+#contentTinTuc .noidung .gia .donvi{
+    font-size: medium;
+    font-weight: normal;
+    color: brown;
+}
+/* Dịch vụ */
+#contentTinTuc .service h1{ 
+        color: #004FA8;
+}
+#contentTinTuc .service .tieude{
+    padding-bottom: 64px;
+}
+
+#contentTinTuc .service .tieude a{
+    font-weight: bold;
+    font-size: medium;
+}
+
+#contentTinTuc .service2{
+    padding: 20px 100px;
+}
+
+/* Tin tức */
+#contentTinTuc .tintuc h3{
+    color: #004FA8;
+}
+
+#contentTinTuc .noidung .tieudechinh a{
+    color: #1d4a8e;
+    font-size: 16px;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 3;
+}
+#contentTinTuc .noidung .tieudechinh a:hover{
+    color: orange;
+}
+
+#contentTinTuc .noidung p{
+    color: #2a2d5c;
+    font-family:"Helvetica Neue", sans-serif;
+}
+
+/* Phân trang */
+#contentTinTuc .phantrang{
+    margin-top: 40px;
+}
+
+

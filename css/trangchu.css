@@ -1,0 +1,200 @@
+/* header */
+
+
+.header{
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    box-shadow:0 0 5px 0 rgb(0 0 0 / 16%);
+    padding: 0px 110px;
+}
+
+
+.header .nav{
+    position: absolute;
+    right: 100px;
+    top: 20px;
+}
+.nav ul{
+    text-align: center;
+    padding: 10px 0px;
+} 
+.nav ul li{
+    display: inline-block;
+    padding: 0px 12px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #2C5282;
+    font-weight: 600;
+    font-size: 18px;
+}
+.nav ul li a:hover{
+    color: orange;
+} 
+/* logo */
+.logo img{
+    width: 100px;
+    height: 80px;
+}
+
+/* Nav */
+.nav ul li{
+    list-style-type: none;
+}
+
+/* Slider */
+.slider{
+    margin-top: 80px;
+    /* margin-bottom: 64px; */
+}
+
+.slider img{
+    width: 1200px;
+    height: 450px;
+}
+/*  Nội dung  */
+.tours{
+    margin-bottom: 64px;
+}
+.tours h1{
+     color: #004FA8;
+}
+
+/* Tour phú quốc */
+.tours-PhuQuoc {
+
+}
+
+.tour-header{
+    border-bottom: 2px solid #eee;
+    margin-bottom: 25px;
+}
+
+
+.tours-PhuQuoc h1{
+    color: #004FA8;
+}
+
+/* Những tour phú quốc  */
+
+/* Nội dung những tour phú quốc */
+.noidung {
+    box-shadow: 0 0 0 1px #eee;
+    background-color: #fff;
+}
+
+.noidung .anh{
+    height: 210px;
+    overflow: hidden;
+}
+.noidung .anh img{
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 120%;
+    max-height: 120%;
+}
+.noidung img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all linear .3s;
+}
+
+.noidung .tieude{
+    border-bottom: 2px solid #eee;
+}
+.noidung h2{
+    margin: 5px 15px;
+    font-weight: bold;
+    
+}
+
+.noidung a{
+    color: #004FA8;
+    font-size: large;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+
+.noidung a:hover{
+    text-decoration: underline;
+}
+.noidung .gia{
+    margin: 5px 15px;
+}
+
+.noidung .gia .tien{
+    color: brown;
+}
+
+.noidung .gia .donvi{
+    font-size: medium;
+    font-weight: normal;
+    color: brown;
+}
+/* Dịch vụ */
+.service h1{ 
+        color: #004FA8;
+}
+.service .tieude{
+    padding-bottom: 64px;
+}
+
+.service .tieude a{
+    font-weight: bold;
+    font-size: medium;
+}
+
+.service2{
+    padding: 20px 100px;
+}
+
+/* Tin tức */
+.tintuc h3{
+    color: #004FA8;
+}
+
+/* Bản tin hot */
+.footer{
+    margin-top: 64px;
+    padding:20px 110px;
+    z-index: 10;
+    bottom: 0;
+    padding: 10px 110px;
+}
+
+.footer .tieude h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer .chinhsach li{
+    list-style-type: none;
+    
+}
+
+.footer .chinhsach a{
+    color: black;
+    text-decoration: none;
+    line-height: 1rem;
+   
+}
+.footer .chinhsach a:hover{
+    color: #004FA8;
+    text-decoration: none;
+    line-height: 1rem;
+    text-decoration: underline;
+   
+}
+.footer .fanpage img{
+    width: 50px;
+}
+
+
+    

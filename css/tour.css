@@ -1,0 +1,115 @@
+/* Content */
+
+#containerTour .boxTour{
+    margin-top: 120px;
+  
+}
+#contentTour{
+    /* margin-top: 300px; */
+}
+/*  Nội dung  */
+#contentTour .tours{
+    margin-bottom: 64px;
+}
+#contentTour .tours h1{
+     color: #004FA8;
+}
+
+/* Tour phú quốc */
+#contentTour .tours-PhuQuoc {
+
+}
+
+#contentTour .tour-header{
+    border-bottom: 2px solid #eee;
+    margin-bottom: 25px;
+}
+
+
+#contentTour .tours-PhuQuoc h1{
+    color: #004FA8;
+}
+
+/* Những tour phú quốc  */
+
+/* Nội dung những tour phú quốc */
+#contentTour .noidung {
+    box-shadow: 0 0 0 1px #eee;
+    background-color: #fff;
+}
+
+#contentTour .noidung .anh{
+    height: 210px;
+    overflow: hidden;
+}
+#contentTour .noidung .anh img{
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 120%;
+    max-height: 120%;
+}
+#contentTour .noidung img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all linear .3s;
+}
+
+#contentTour .noidung .tieude{
+    border-bottom: 2px solid #eee;
+}
+#contentTour .noidung h2{
+    margin: 5px 15px;
+    font-weight: bold;
+    
+}
+
+#contentTour .noidung a{
+    color: #004FA8;
+    font-size: large;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+
+#contentTour .noidung a:hover{
+    text-decoration: underline;
+}
+#contentTour .noidung .gia{
+    margin: 5px 15px;
+}
+
+#contentTour .noidung .gia .tien{
+    color: brown;
+}
+
+#contentTour .noidung .gia .donvi{
+    font-size: medium;
+    font-weight: normal;
+    color: brown;
+}
+/* Dịch vụ */
+#contentTour .service h1{ 
+        color: #004FA8;
+}
+#contentTour .service .tieude{
+    padding-bottom: 64px;
+}
+
+#contentTour .service .tieude a{
+    font-weight: bold;
+    font-size: medium;
+}
+
+#contentTour .service2{
+    padding: 20px 100px;
+}
+
+/* Tin tức */
+#contentTour .tintuc h3{
+    color: #004FA8;
+}
+
+
+    

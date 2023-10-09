@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Asm copy/css/tintuc2.css">
+        <!-- Nhúng thư viên AngularJS -->
+        <script src="../libs/angular.min.js"></script>
+        <script src="../js/trangchu.js"></script>
+</head>
+
+<body ng-app="myApp">
+
+          <!-- Header -->
+          <header class="header bg-white" >
+            <div class="main-header ">
+                <div class="logo ">
+                    <img src="../images/thongtinve_logo.png" alt="">
+                </div>
+                <div class="nav ">
+                    <ul class="" ng-repeat="item in nav ">  
+                        <li class=""><a href="../view/HomePage.html">TRANG CHỦ</a> </li>
+                        <li class=""><a href="../view/FlightBookingPage.html">ĐẶT VÉ MÁY BAY</a> </li>
+                        <li class=""><a href="../view/TuorPage.html">TOUR TRONG NƯỚC</a> </li>
+                        <li class=""><a href="../view/NewsPage.html">TIN TỨC</a> </li>
+                        <li class=""><a href="../view/ContactPage.html">LIÊN HỆ</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </header>   
+        <div class="container" >
+            <!-- Content -->
+            <div class="content">
+              
+
+                      <!-- Tin tức -->
+                      <div class="tintuc d-flex justify-content-between mt-5">
+                            <div class="tieude my-3">
+                                <h3 class="">TIN TỨC</h3>
+                            </div>
+                          
+                      </div>
+
+                      <div class="bangtinhot">
+                        <!-- Hàng 1 -->
+                        <div class="row mb-4">
+                            <div class="col-3">
+                                <div class="noidung">
+                                    <div class="anh">
+                                        <img src="../images/dia-diem-song-ao-dep-nhat-phu-quoc-tintuc1.png" alt="" class= " img__item  w-full img-thumbnail ">
+                                    </div>
+                                     <div class="tieude">
+                                        <p class="mt-2 ps-2 tieudechinh"><a href="">Ngành du lịch phát triển mạnh</a></p>
+                                        <p class="date ps-2">Kỳ nghỉ kéo dài 4 ngày đem đến nguồn thu lớn cho du lịch TP Hồ Chí Min</p>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="noidung">
+                                    <div class="anh">
+                                        <img src="../images/thanh-toan-giao-hang-tintuc2.jpg" alt="" class= " img__item  w-full img-thumbnail ">
+                                    </div>
+                                     <div class="tieude">
+                                        <p class="mt-2 ps-2 tieudechinh"><a href="">Thành toán & giao hàng</a></p>
+                                        <p class="date ps-2">Khách đặt dịch vụ khách sạn, công viên giải trí bằng thẻ UnionPay trên website </p>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="noidung">
+                                    <div class="anh">
+                                        <img src="../images/khuyen-mai-nhan-dip-khai-truong--tintuc3.jpg" alt="" class= " img__item  w-full img-thumbnail ">
+                                    </div>
+                                     <div class="tieude">
+                                        <p class="mt-2 ps-2 tieudechinh"><a href="">Khuyến mãi nhân dịp khai trương</a></p>
+                                        <p class="date ps-2">Công ty Du lịch Vietravel chính thức khai trương chi nhánh mới Tây Ninh </p>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="noidung">
+                                    <div class="anh">
+                                        <img src="../images/khuyen-mai-nhan-dip-khai-truong-tintuc4.jpg" alt="" class= " img__item  w-full img-thumbnail ">
+                                    </div>
+                                     <div class="tieude">
+                                        <p class="mt-2 ps-2 tieudechinh"><a href="">Địa điểm đẹp nhất Hàn Quốc</a></p>
+                                        <p class="date ps-2">Nằm giữa lòng thủ đô Seoul Hàn Quốc, Hồ Seokchon là một hồ nước tự nhiên  </p>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Hàng 2 -->
+                        <div class="row mb-4">
+                            <div class="col-3">
+                                <div class="noidung">
+                                    <div class="anh">
+                                        <img src="../images/Tintuc1.jfif" alt="" class= " img__item  w-full img-thumbnail ">
+                                    </div>
+                                     <div class="tieude">
+                                        <p class="mt-2 ps-2 tieudechinh"><a href="">Địa điểm đẹp nhất Trung Quốc</a></p>
+                                        <p class="date ps-2">Năm nay, du khách có thể tận hưởng mùa thu Trung Quốc</p>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="noidung">
+                                    <div class="anh">
+                                        <img src="../images/Tintuc2.png" alt="" class= " img__item  w-full img-thumbnail ">
+                                    </div>
+                                     <div class="tieude">
+                                        <p class="mt-2 ps-2 tieudechinh"><a href="">Hộ chiếu gắn chip điện tử</a></p>
+                                        <p class="date ps-2">Hộ chiếu gắn chip điện tử bắt đầu được cấp từ ngày 1/09/2023</p>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="noidung">
+                                    <div class="anh">
+                                        <img src="../images/Tintuc3.png" alt="" class= " img__item  w-full img-thumbnail ">
+                                    </div>
+                                     <div class="tieude">
+                                        <p class="mt-2 ps-2 tieudechinh"><a href="">Đặt vé để gặp thần tượng Black Pink</a></p>
+                                        <p class="date ps-2">Liên hệ ngay với Vivavivu để đặt vé trên Air Asia đến Kuala Lumpur giá tốt nhất!</p>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="noidung">
+                                    <div class="anh">
+                                        <img src="../images/Tintuc4.png" alt="" class= " img__item  w-full img-thumbnail ">
+                                    </div>
+                                     <div class="tieude">
+                                        <p class="mt-2 ps-2 tieudechinh"><a href="">Chính sách nhập cảng Úc</a></p>
+                                        <p class="date ps-2">Chính sách nhập cảnh Úc cho hành khách đến từ Trung Quốc tháng 01/2023</p>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <!-- Phân trang -->
+                        <div class="phantrang ">
+                            <nav aria-label="Page navigation example ">
+                                <ul class="pagination justify-content-center">
+                                  <li class="page-item disabled">
+                                    <a class="page-link" href="/Asm copy/views/NewsPage2.html"> <span aria-hidden="true">&laquo;</span></a>
+                                    <!-- <a class="page-link" href="#" tabindex="-1" aria-disabled="true">  <span aria-hidden="true">&laquo;</span></a> -->
+                                  </li>
+                                  <li class="page-item "><a class="page-link" href="/Asm copy/views/NewsPage3.html">1</a></li>
+                                  <li class="page-item "><a class="page-link" href="/Asm copy/views/NewsPage3.html">2</a></li>
+                                  <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="../view/NewsPage.html"> <span aria-hidden="true">&raquo;</span></a>
+                                  </li>
+                                </ul>
+                              </nav>
+                        </div>
+
+
+
+
+
+                      </div>
+
+                     
+                     
+            </div>
+            </div>
+            
+        </div>
+        <!-- Footer -->
+        <div class="footer bg-light d-flex justify-content-evenly">
+            <div class="row">
+                <div class="col-6">
+                    <div class="tieude">
+                        <h4>CÔNG TY TNHH DỊCH VỤ DU LỊCH BIỂN FPOLY</h4>
+                        <ul class="ps-4">
+                            <li>Địa chỉ: xxxxxNguyễn Trung Trực, khu phố 5, - Phường Dương Đông - Thành phố Phú Quốc - Kiên Giang</li>
+                            <li>Hotline: 0938716xxx</li>
+                            <li>Email: phuqxxxxvel2@gmail.com</li>
+                            <li>Website: dulichbxxxx</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="tieude">
+                                <h4>CHÍNH SÁCH</h4>
+                                <ul class="chinhsach ps-0">
+                                    <li><a href="">Địa điểm sống ảo đẹp nhất phú quốc</a></li>
+                                    <li><a href="">Dịch vụ cho thuê tàu, cano</a></li>
+                                    <li><a href="">Bảng giá phòng resort, khách sạn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="tieude">
+                                <h4>FANPAGE</h4>
+                                <div class="fanpage ">
+                                    <a href="https://www.facebook.com/" class="pe-3"><img src="../images/blue-social-media-logo_footer1.avif" alt=""></a>
+                                    <a href="https://www.instagram.com/accounts/login/?hl=en" class="pe-3"><img src="../images/instagram-icon_1057-2227-footer2.avif" alt=""></a>
+                                    <a href="https://twitter.com/?lang=en" class=""><img src="../images/580b57fcd9996e24bc43c53e-footer3.png" alt=""></a>
+                                    <a href="https://zalo.me/pc" class=""><img src="../images/zalo-icon-footer3.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
