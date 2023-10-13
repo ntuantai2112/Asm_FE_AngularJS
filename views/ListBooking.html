@@ -1,0 +1,89 @@
+<div class="container">
+    <div class="list-booking">
+        <!-- <div class="col-12"> -->
+         <!--    <div class="noidung" >
+                     <p>{{test}}</p>
+                    <div class="element-container">
+                        <div class="row my-5 mx-5">
+                            <div class="col-6">
+                                <div><h6>Họ và tên:{{FullName}}</h6></div>
+                            </div>
+                            <div class="col-6">
+                                <div><h6>Số điện thoại:{{Phone}}</h6></div>
+                            </div>
+                        </div>
+                        <div class="row my-5 mx-5">
+                            <div class="col-6">
+                                <div><h6>Chứng minh thư:{{Card}}</h6></div>
+                            </div>
+                            <div class="col-6">
+                                <div><h6>Email:{{Email}}</h6></div>
+                            </div>
+                        </div>
+                        <div class="row my-5 mx-5">
+                            <div class="col-6">
+                                <div><h6>Giới tính:{{Gender}}</h6></div>
+                            </div>
+                            <div class="col-6">
+                                <div><h6>Chuyến bay:{{Flight}}</h6></div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-5 mx-5">
+                            <div class="col-6">
+                                <div><h6>Ngày sinh:{{Birthday}}</h6></div>
+                            </div>
+                            <div class="col-6">
+                                <div><h6>Hành lý:{{Luggage}}</h6></div>
+                            </div>
+                        </div>
+
+
+                        
+                    </div> 
+            </div> -->
+        <!-- </div> -->
+    </div>
+</div>
+
+<!-- Table thông tin đặt vé máy bay -->
+<table class="table mt-5">
+                    <h1 class="text-center">Thông tin khách hàng đã đặt vé máy bay</h1>
+    <thead>
+      <tr>
+        <th scope="col">Họ và tên</th>
+        <th scope="col">Số điện thoại</th>
+        <th scope="col">Chứng minh thư</th>
+        <th scope="col">Email</th>
+        <th scope="col">Giới tính</th>
+        <th scope="col">Chuyến bay</th>
+        <th scope="col">Ngày sinh</th>
+        <th scope="col">Hành lý</th>
+        <th scope="col">Hình thức thanh toán</th>
+        <th scope="col">Hành động</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="info in listBooking ">
+            <th class="fw-normal">{{info.FullName}}</th>
+            <td>{{info.Phone}}</td>
+            <td>{{info.Card}}</td>
+            <td>{{info.Email}}</td>
+            <td>{{info.Gender}}</td>
+            <td>{{info.Flight}}</td>
+            <td>{{info.Birthday | date:'dd-MM-yyyy'}} </td>
+            <td>{{info.Luggage}}kg </td>
+            <td>{{info.Payment}} </td>
+            
+            <td>
+                <div class="action">
+                <button  type="button" ng-click="onEdit(info.id)" class="btn btn-warning">Sửa</button>
+                <button  type="button" ng-click="onDelete(info.id)" class="btn btn-danger">Xóa</button>
+                </div>
+            </td>
+
+      </tr>
+      
+    </tbody>
+  </table>
+  

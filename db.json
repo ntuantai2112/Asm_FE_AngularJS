@@ -1,48 +1,52 @@
 {
   "listBooking": [
     {
-      "id": 1,
+      "FullName": "Nguyễn Quang Minh",
+      "Phone": "0988483080",
+      "Card": "098887654321",
+      "Email": "taintph29115@fpt.edu.vn",
+      "Gender": "Nam",
+      "Flight": "Vietjet Air",
+      "Birthday": "2023-10-19T17:00:00.000Z",
+      "Luggage": "6",
+      "Payment": "Thẻ ATM",
+      "id": 5
+    },
+    {
+      "FullName": "Nguyễn Quang Đăng",
+      "Phone": "0988765234",
+      "Card": "09887657834",
+      "Email": "dangnt@gmail.com",
+      "Gender": "Nam",
+      "Flight": "Bamboo Airways",
+      "Birthday": "2023-10-11T17:00:00.000Z",
+      "Luggage": "2",
+      "Payment": "Thẻ thanh toán quốc tế",
+      "id": 6
+    },
+    {
+      "FullName": "Đỗ Duy Hưng",
+      "Phone": "0988865432",
+      "Card": "09888865421",
+      "Email": "hung@gmail.com",
+      "Gender": "Nam",
+      "Flight": "Vietjet Air",
+      "Birthday": "2023-10-12T17:00:00.000Z",
+      "Luggage": "3",
+      "Payment": "Ví điện tử",
+      "id": 7
+    },
+    {
       "FullName": "Nguyễn Tuấn Tài",
-      "Phone": "0988485678",
-      "Card": "001089000982",
-      "Email": "tuantain@gmail.com",
+      "Phone": "0815339572",
+      "Card": "098876543214",
+      "Email": "taintph29115@fpt.edu.vn",
       "Gender": "Nam",
-      "Flight": "VietNameAirline",
-      "Birthday": "21/12/2003",
-      "Luggage": "5"
-    },
-    {
-      "id": 2,
-      "FullName": "Nguyễn Tuấn Tú",
-      "Phone": "0388485090",
-      "Card": "001089123989",
-      "Email": "tuantun@gmail.com",
-      "Gender": "Nam",
-      "Flight": "Bamboo Airways",
-      "Birthday": "24/12/1996",
-      "Luggage": "3"
-    },
-    {
-      "id": 3,
-      "FullName": "Tạ Thanh Tùng",
-      "Phone": "0398483888",
-      "Card": "001089090812",
-      "Email": "thanhtungt@gmail.com",
-      "Gender": "Nam",
-      "Flight": "VietNameAirline",
-      "Birthday": "20/10/2000",
-      "Luggage": "4"
-    },
-    {
-      "id": 4,
-      "FullName": "Nguyễn Phương Anh",
-      "Phone": "0948080765",
-      "Card": "00123498767",
-      "Email": "phuoganhn@gmail.com",
-      "Gender": "Nữ",
-      "Flight": "Bamboo Airways",
-      "Birthday": "01/02/2001",
-      "Luggage": "8"
+      "Flight": "Vietjet Air",
+      "Birthday": "2023-10-20T17:00:00.000Z",
+      "Luggage": "2",
+      "Payment": "Thẻ Thanh Toán Quốc Tế",
+      "id": 8
     }
   ],
   "posts": [

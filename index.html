@@ -33,6 +33,7 @@
                         <li class=""><a href="#!/tour">TOUR TRONG NƯỚC</a> </li>
                         <li class=""><a href="#!/tin-tuc">TIN TỨC</a> </li>
                         <li class=""><a href="#!/lien-he">LIÊN HỆ</a> </li>
+                        <li class=""><a href="#!/list-dat-ve">LIST BOOKING</a> </li>
                         
                     </ul>
                 </div>
@@ -91,6 +92,8 @@
 <script src="../Asm/controllers/LienHeController.js"></script>
 <script src="../Asm/controllers/TinTucController.js"></script>
 <script src="../Asm/controllers/TourController.js"></script>
+<script src="../Asm/controllers/ListBookingController.js"></script>
+<script src="../Asm/controllers/EditDatVeMayBayCotroller.js"></script>
 <script>
     // ngRouter cung cấp tính năng định tuyến(điều hướng) để quản lý việc điều hướng
         let myApp = angular.module('appRoute',['ngRoute']);
@@ -146,12 +149,22 @@
                     controller: DatVeMayBayController
                  })
 
+                 .when('/list-dat-ve',{
+                    templateUrl: "views/ListBooking.html",
+                    controller: ListBookingController
+                 })
+
+                 .when('/datvemaybay/:id/edit',{
+                    templateUrl: "views/EditFlightBookingPage.html",
+                    controller: EditDatVeMayBayController
+                 })
+
 
 
                 // Trong trường hợp người dùng yêu cầu 1 đường dẫn k có, 
                 // Nó sẽ tự động được chuyển hướng về router này
                  .otherwise({
-                    redirectTo:  '/trang-chu',
+                    redirectTo:'/trang-chu',
 
                  })
 

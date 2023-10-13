@@ -72,8 +72,8 @@
     <div class="row box-lienhe">
         <div class="col-6">
             <div class="form-lienhe ">
-                <form  ng-submit="onSubmit()"  name="formFightBooking">
-                    <h1 class="text-center">{{datvemaybay}}</h1>
+                <form  ng-submit="onEdit()"  name="formFightBooking">
+                    <h1 class="text-center">Sửa vé máy bay</h1>
                     <!-- Họ và tên-->
                    <div class="row">
                         <div class="col-6 ">
@@ -191,7 +191,7 @@
                             <label for="" class="mt-2">Hình thức thanh toán</label>
                         </div>
                         <div class="col-6">
-                            <select  class="form-select" aria-label="Default select example" ng-model="booking.Payment "  ng-click="clearError('Payment')">
+                            <select  class="form-select" aria-label="Default select example" ng-model="booking.Payment ">
                                 <option selected>--Chọn--</option>
                                 <option value="Thẻ ATM">Thẻ ATM</option>
                                 <option value="Thẻ Thanh Toán Quốc Tế">Thẻ Thanh Toán Quốc Tế</option>
@@ -202,7 +202,7 @@
                         </div>
                     </div>
                    </div>
-                    <button class="btn btn-outline-warning mt-5 form-control" type="submit">ĐẶT VÉ</button>
+                    <button class="btn btn-outline-warning mt-5 form-control" type="submit">SỬA THÔNG TIN ĐẶT VÉ</button>
 
                 </form>
             </div>
@@ -228,42 +228,7 @@
 
 
 <!-- Table thông tin đặt vé máy bay -->
- <!-- <table class="table mt-5">
-    <thead>
-      <tr>
-        <th scope="col">Họ và tên</th>
-        <th scope="col">Số điện thoại</th>
-        <th scope="col">Chứng minh thư</th>
-        <th scope="col">Email</th>
-        <th scope="col">Giới tính</th>
-        <th scope="col">Chuyến bay</th>
-        <th scope="col">Ngày sinh</th>
-        <th scope="col">Hành lý</th>
-        <th scope="col">Hành động</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr ng-repeat="info in listBooking ">
-            <th class="fw-normal">{{info.FullName}}</th>
-            <td>{{info.Phone}}</td>
-            <td>{{info.Card}}</td>
-            <td>{{info.Email}}</td>
-            <td>{{info.Gender}}</td>
-            <td>{{info.Flight}}</td>
-            <td>{{info.Birthday | date:'dd-MM-yyyy'}} </td>
-            <td>{{info.Luggage}}kg </td>
-            
-            <td>
-                <div class="action">
-                <button  type="button" ng-click="onEdit(info.id)" class="btn btn-warning">Sửa</button>
-                <button  type="button" ng-click="onDelete(info.id)" class="btn btn-danger">Xóa</button>
-                </div>
-            </td>
 
-      </tr>
-      
-    </tbody>
-  </table>  -->
   
 
 
